@@ -47,15 +47,15 @@ function renderimage(address, output, delay) {
               page.sendEvent('mousemove', 200, 200);
               page.sendEvent('mouseclick', 200, 200);
               var rect = page.evaluate(function() {
-                    var div = document.getElementById('CSCanvas') || document.getElementById('CSCanvas1') || document.getElementById('cindy') || document.getElementById('enCindy');
-                    return div.childNodes[0].getBoundingClientRect();
+                    var div = document.getElementById('Cindy3D') || document.getElementById('CSCanvas') || document.getElementById('CSCanvas1') || document.getElementById('cindy') || document.getElementById('enCindy');
+                    return div.getBoundingClientRect();
                   });
                   
                 page.clipRect =  rect ? {
-                  top: rect.top,
-                  left: rect.left,
-                  width: rect.width,
-                  height: rect.height
+                  top: rect.top+2,
+                  left: rect.left+2,
+                  width: rect.width-4,
+                  height: rect.height-4
                 } : {
                     top: 100,
                     left: 100,
