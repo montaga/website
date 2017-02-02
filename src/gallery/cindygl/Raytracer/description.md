@@ -18,6 +18,8 @@
   <option value="cos(2*x)+cos(2*y)+cos(2*z)+a">Schwarz P</option>
 </select>
 </div>
+<div>
     Non-algebraic functions are approximated by polynomials.
     Roots are isolated by Descartes Method in Bernstein basis.
+</div>
     
